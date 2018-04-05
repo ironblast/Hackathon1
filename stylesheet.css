@@ -17,3 +17,15 @@ body {
 	top: 5%;
 	margin-left: 62%;
 }
+
+#avancement1 {
+	position: absolute;
+	top: 12%;
+	margin-left: 10%;
+}
+
+#avancement2 {
+	position: absolute;
+	top: 12%;
+	margin-left: 75%;
+}
