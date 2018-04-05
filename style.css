@@ -1,0 +1,23 @@
+#charSelection {
+    margin-left: 30%;
+    margin-right: 20%;
+}
+
+.card-text {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.card-img-top {
+    border: 5px solid;
+    border-image: url('/img/wood_1/wood_1.png') 5px;
+    box-shadow: 5px 5px 0 gray;
+}
+
+.card-body {
+    padding: 5px;
+}
+
+.card-img-top:hover {
+    transform: scale(1.5);
+}
