@@ -1,0 +1,19 @@
+h1 {
+	max-width: 60%;
+	margin-left: 10%;
+}
+
+body {
+	background-color: black;
+}
+
+.life-gauche {
+	position: absolute;
+	top: 5%;
+}
+
+.life-droite {
+	position: absolute;
+	top: 5%;
+	margin-left: 62%;
+}
