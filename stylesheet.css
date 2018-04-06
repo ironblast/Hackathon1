@@ -2,7 +2,7 @@
   font-family: 'Street_Fighter';
   src: url('Images/police/Street_Fighter.ttf');
 }
-.container h1{
+.container h2{
     font-family: 'Street_Fighter';
     color : #FE9000;
     padding-top: 3%;
@@ -14,7 +14,7 @@
   padding-left: 45%;
   width: 140%;
 }
-.container h2{
+.container p{
     font-family: 'Street_Fighter';
     color : #FE9000;
     font-size: 40px;
@@ -40,7 +40,8 @@
 
 
 h1 {
-	max-width: 60%;
+	position: absolute;
+	max-width: 50%;
 	margin-left: 13%;
 }
 
