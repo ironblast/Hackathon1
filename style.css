@@ -1,7 +1,4 @@
-#charSelection {
-    margin-left: 30%;
-    margin-right: 20%;
-}
+
 
 .card-text {
     font-size: 1.2em;
@@ -15,9 +12,9 @@
 }
 
 .card-body {
-    padding: 5px;
+    padding: 15px;
 }
 
 .card-img-top:hover {
-    transform: scale(1.5);
+    transform: scale(2);
 }

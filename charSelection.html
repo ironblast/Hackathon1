@@ -13,8 +13,35 @@
   <body>
     <h1>Hello, world!</h1>
     <div class="container">
-      <div id="charSelection" class="row">
+      <div class="row">
+      <div class="col-4">   
+       <div class="container">
+         <span onclick="this.parentElement.style.display='none'" ></span>
+  <img id="expandedImg0" style="width:60%">
+  <h2>Player 1</h2>
+         <button id="buttonp1" onclick="validPlayer(this)" class="btn">Validé</button>
+  <div id="imgtext"></div>
+        </div>
+       
+        </div>
+    <div class="col-4">
+      <div class="container">
+      <div id="charSelection" class="row" >
       </div>
+      </div>
+    </div>
+        <div class="col-4">
+          <div class="container">
+            <span onclick="this.parentElement.style.display='none'" ></span>
+  <img id="expandedImg1" style="width:60%">
+  <h2>Player 2</h2>
+         <button id="buttonp2" onclick="validPlayer(this)" class="btn">Validé</button>
+  <div id="imgtext"></div>
+        </div>
+          </div>
+        </div>
+          
+    </div>
     </div>
 
     <script src="charSelection.js"></script>
