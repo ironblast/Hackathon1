@@ -20,7 +20,7 @@
 
 h1 {
 	max-width: 60%;
-	margin-left: 10%;
+	margin-left: 13%;
 }
 
 body {
@@ -36,7 +36,7 @@ body {
 .life-droite {
 	position: absolute;
 	top: 5%;
-	margin-left: 62%;
+	margin-left: 67%;
 }
 
 #avancement-0 {
@@ -50,7 +50,7 @@ body {
 	position: absolute;
 	top: 12%;
 	width: 22.9%;
-	margin-left: 66%;
+	margin-left: 71%;
 	transform: rotate(180deg);
 }
 
