@@ -24,7 +24,8 @@ h1 {
 }
 
 body {
-    background-color: black;
+    background-image: url(Images/Krossroads.jpg);
+    background-size: cover;
     color: #ddd;
 }
 

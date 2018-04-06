@@ -148,7 +148,7 @@ function showPageFight() {
   p0attack.addEventListener('click', evt => {
     document.getElementById('Guy').classList.remove('animation-droite')
     document.getElementById('Zanghief').classList.add('animation-gauche')
-    const damage = players[1].defenseEnabled ? -5 : -10
+    const damage = players[1].defenseEnabled ? -10 : -20
     updateLifePoints(1, damage)
     player0done()
   })
@@ -156,7 +156,7 @@ function showPageFight() {
   p1attack.addEventListener('click', evt => {
     document.getElementById('Zanghief').classList.remove('animation-gauche')
     document.getElementById('Guy').classList.add('animation-droite')
-    const damage = players[0].defenseEnabled ? -5 : -10
+    const damage = players[0].defenseEnabled ? -10 : -20
     updateLifePoints(0, damage)
     player1done()
   })
@@ -167,7 +167,7 @@ function showPageFight() {
   p0fury.addEventListener('click', evt => {
     document.getElementById('Guy').classList.remove('animation-droite')
     document.getElementById('Zanghief').classList.add('animation-gauche')
-    const damage = players[1].defenseEnabled ? -10 : -20
+    const damage = players[1].defenseEnabled ? -15 : -30
     updateLifePoints(1, damage)
     player0done()
   })
@@ -175,7 +175,7 @@ function showPageFight() {
   p1fury.addEventListener('click', evt => {
     document.getElementById('Zanghief').classList.remove('animation-gauche')
     document.getElementById('Guy').classList.add('animation-droite')
-    const damage = players[0].defenseEnabled ? -10 : -20
+    const damage = players[0].defenseEnabled ? -15 : -30
     updateLifePoints(0, damage)
     player1done()
   })
