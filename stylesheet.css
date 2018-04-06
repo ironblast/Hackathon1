@@ -32,3 +32,77 @@ body {
 	margin-left: 66%;
 	transform: rotate(180deg);
 }
+
+/*Animation page fight*/
+
+@keyframes slideGauche {
+  0% {
+      margin-left: 20%;
+      transform: rotate(20deg);
+  }
+  60% {
+    margin-left: 75%;
+    transform: rotate(20deg)
+  }
+  100% {
+      margin-left: 20%;
+      transform: rotate(-360deg)
+  }
+}
+
+@keyframes slideDroite {
+  0% {
+      margin-right: 20%;
+      transform: rotate(20deg);
+  }
+  60% {
+    margin-right: 75%;
+    transform: rotate(20deg)
+  }
+  100% {
+      margin-right: 20%;
+      transform: rotate(-360deg)
+  }
+}
+
+.animation-gauche {
+	animation-name: slideGauche;
+    animation-duration: 1.5s;
+}
+
+.animation-droite {
+	animation-name: slideDroite;
+	animation-duration: 1.5s;
+}
+
+.declenchement-onomatopee {
+	animation-name: mymove;
+    animation-duration: 3s;
+    z-index: 1;
+}
+
+.joueur-gauche {
+    text-align: center;
+    margin-left: 20%;
+}
+
+.joueur-droite {
+    text-align: center;
+    margin-right: 0%;    
+}
+
+.onomatopee {
+    visibility: hidden;
+    position: absolute;
+    top: 20%;
+    margin-left: 5%;
+    max-width: 80%;
+}
+
+@keyframes mymove {
+    0%   {visibility: hidden;}
+    25%  {visibility: hidden;}
+    60%  {visibility: visible;}
+    65%  {visibility: hidden;}
+    100% {visibility: hidden;}
+}

@@ -61,12 +61,16 @@ const p0attack = document.getElementById('player-attack-0');
 const p1attack = document.getElementById('player-attack-1');
 
 p0attack.addEventListener('click', evt => {
+  document.getElementById('Guy').classList.remove('animation-droite')
+  document.getElementById('Zanghief').classList.add('animation-gauche')
   const damage = players[1].defenseEnabled ? -5 : -10
   updateLifePoints(1, damage)
   player0done()
 })
 
 p1attack.addEventListener('click', evt => {
+  document.getElementById('Zanghief').classList.remove('animation-gauche')
+  document.getElementById('Guy').classList.add('animation-droite')
   const damage = players[0].defenseEnabled ? -5 : -10
   updateLifePoints(0, damage)
   player1done()
@@ -76,12 +80,16 @@ const p0fury = document.getElementById('player-fury-0');
 const p1fury = document.getElementById('player-fury-1');
 
 p0fury.addEventListener('click', evt => {
+  document.getElementById('Guy').classList.remove('animation-droite')
+  document.getElementById('Zanghief').classList.add('animation-gauche')
   const damage = players[1].defenseEnabled ? -10 : -20
   updateLifePoints(1, damage)
   player0done()
 })
 
 p1fury.addEventListener('click', evt => {
+  document.getElementById('Zanghief').classList.remove('animation-gauche')
+  document.getElementById('Guy').classList.add('animation-droite')
   const damage = players[0].defenseEnabled ? -10 : -20
   updateLifePoints(0, damage)
   player1done()
@@ -91,10 +99,12 @@ const p0potion = document.getElementById('player-potion-0');
 const p1potion = document.getElementById('player-potion-1');
 
 p0potion.addEventListener('click', evt => {
+  document.getElementById('Guy').classList.remove('animation-droite')
   updateLifePoints(0, +30)
   player0done()
 })
 p1potion.addEventListener('click', evt => {
+  document.getElementById('Zanghief').classList.remove('animation-gauche')
   updateLifePoints(1, +30)
   player1done()
 })
@@ -103,10 +113,12 @@ const p0defense = document.getElementById('player-defense-0');
 const p1defense = document.getElementById('player-defense-1');
 
 p0defense.addEventListener('click', evt => {
+  document.getElementById('Guy').classList.remove('animation-droite')
   players[0].defenseEnabled = true
   player0done()
 })
 p1defense.addEventListener('click', evt => {
+  document.getElementById('Zanghief').classList.remove('animation-gauche')
   players[1].defenseEnabled = true
   player1done()
 })
