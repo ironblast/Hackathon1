@@ -5,7 +5,7 @@ let choosenHeroes = [undefined,undefined]
 
 const createHero = hero => `
 <div class=col-3>
-<img class=card-img-top onclick="myFunction(this, ${hero.id});"
+<img class=card-img-top onclick = "myFunction(this, ${hero.id});"
 alt="${hero.name}" src="${hero.images.sm}" />
 <div class="card-body">
     <p class="card-text"></p>

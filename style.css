@@ -1,5 +1,16 @@
-
-
+@font-face {
+	font-family: 'Street_Fighter';
+	src: url('img/police/Street_Fighter.ttf');
+}
+.container h1{
+		font-family: 'Street_Fighter';
+		color : blue;
+		margin-left: 33%;
+}
+.container h2{
+		font-family: 'Street_Fighter';
+		color : blue;
+}
 .card-text {
     font-size: 1.2em;
     text-align: center;
