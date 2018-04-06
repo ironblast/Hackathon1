@@ -28,6 +28,7 @@ body {
 #avancement-1 {
 	position: absolute;
 	top: 12%;
-	margin-left: 75%;
+	width: 22.9%;
+	margin-left: 66%;
 	transform: rotate(180deg);
 }
