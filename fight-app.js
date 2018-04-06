@@ -30,41 +30,44 @@ alt="${hero.name}" src="${hero.images.sm}" />
 <h2></h2>
 </div>`
 
-const charSelection = html => `
+const charSelection = html =>
+ `<div class="container">
+ <h1>Javascript VS Java</h1>
 <div class= "container">
   <div class="row">
 <div class="col-4">   
  <div class="container">
    <span onclick="this.parentElement.style.display='none'" ></span>
 <img id="expandedImg0" style="width:60%">
-<h2>Player 1</h2>
+<h2>Player One</h2>
    <button id="buttonp1" onclick="validPlayer(this)" class="btn">Validé</button>
 <div id="imgtext0"></div>
   </div>
  
   </div>
 <div class="col-4">
-<div class="container">
+<div class="container ">
 <div id="charSelection" class="row">
   ${html}
 </div>
 </div>
 </div>
   <div class="col-4">
-    <div class="container">
+    <div class="container cartep2">
       <span onclick="this.parentElement.style.display='none'" ></span>
 <img id="expandedImg1" style="width:60%">
-<h2>Player 2</h2>
+<h2>Player Two</h2>
    <button id="buttonp2" onclick="validPlayer(this)" class="btn">Validé</button>
 <div id="imgtext1"></div>
   </div>
     </div>
   </div>
     
+</div>
 </div>`
 
 const pageFightHtml = (player1, player2) => `
-<h1><img class="img-fluid offset-6 col-md-3 col-lg-3" src="Images/vs1.png" alt="" /></h1>
+<img class="img-fluid offset-6 col-md-3 col-lg-3" src="Images/vs1.png" alt="" /></h1>
 <div class="container-fluid">
   <div class="row">
       <div class="barreGauche">
