@@ -1,0 +1,62 @@
+.fb 
+{
+    text-align: center;
+    width: 30%;
+    animation-name: slidefb;
+    animation-duration: 3s;
+    margin-left: 20%;
+    
+}
+
+/* @keyframes slidefb {
+    from {
+      margin-left: 20%;
+      transform: rotate(720deg);
+      
+    }
+    60% {
+    margin-left: 75%;
+  }
+  
+    to {
+      margin-left: 20%;
+    }
+  } */
+
+  @keyframes slidefb {
+    0% {
+      margin-left: 20%;
+      transform: rotate(20deg);
+    }
+    60% {
+    margin-left: 75%;
+    transform: rotate(20deg)
+  }
+    100% {
+      margin-left: 20%;
+      transform: rotate(-360deg)
+    }
+}
+
+.insta
+{
+    text-align: center;
+    width: 30%;
+    margin-right: 0%;    
+}
+
+.twitch
+{
+    visibility: hidden;
+    animation-name: mymove;
+    animation-duration: 3s;
+}
+
+@keyframes mymove {
+    0%   {visibility: hidden;}
+    25%  {visibility: hidden;}
+    60%  {visibility: visible;}
+    65%  {visibility: hidden;}
+    100% {visibility: hidden;}
+}
+
