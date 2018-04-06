@@ -1,10 +1,31 @@
+.card-text {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.card-img-top {
+    border: 5px solid;
+    border-image: url('/img/wood_1/wood_1.png') 5px;
+    box-shadow: 5px 5px 0 gray;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-img-top:hover {
+    transform: scale(2);
+}
+
+
 h1 {
 	max-width: 60%;
 	margin-left: 10%;
 }
 
 body {
-	background-color: black;
+    background-color: black;
+    color: #ddd;
 }
 
 .life-gauche {
@@ -85,10 +106,20 @@ body {
     text-align: center;
     margin-left: 20%;
 }
+.boutons-gauche {
+    margin-top: 10px;
+    padding-left: 7%;
+}
 
 .joueur-droite {
+    float: right;
     text-align: center;
-    margin-right: 0%;    
+    margin-right: 20%;    
+}
+.boutons-droite {
+    margin-top: 10px;
+    padding-right: 7%;
+    text-align: right;
 }
 
 .onomatopee {
