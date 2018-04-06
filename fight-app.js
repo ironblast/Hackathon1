@@ -67,7 +67,7 @@ const charSelection = html =>
 </div>`
 
 const pageFightHtml = (player1, player2) => `
-<img class="img-fluid offset-6 col-md-3 col-lg-3" src="Images/vs1.png" alt="" /></h1>
+<img class="img-fluid offset-5 col-md-3 col-lg-3" src="Images/vs1.png" alt="" /></h1>
 <div class="container-fluid">
   <div class="row">
       <div class="barreGauche">
