@@ -18,17 +18,16 @@ body {
 	margin-left: 62%;
 }
 
-#avancement1 {
+#avancement-0 {
 	position: absolute;
 	top: 12%;
 	margin-left: 6.5%;
 	width: 22.9%;
 }
 
-#avancement2 {
+#avancement-1 {
 	position: absolute;
 	top: 12%;
-	margin-left: 66%;
-	width: 22.9%;
+	margin-left: 75%;
 	transform: rotate(180deg);
 }
