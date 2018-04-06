@@ -21,11 +21,14 @@ body {
 #avancement1 {
 	position: absolute;
 	top: 12%;
-	margin-left: 10%;
+	margin-left: 6.5%;
+	width: 22.9%;
 }
 
 #avancement2 {
 	position: absolute;
 	top: 12%;
-	margin-left: 75%;
+	margin-left: 66%;
+	width: 22.9%;
+	transform: rotate(180deg);
 }
