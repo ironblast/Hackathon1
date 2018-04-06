@@ -1,37 +1,23 @@
-// var progressBar = document.getElementById('p');
-// var newValue=0;
- 
-// function updateProgress(newValue) {
-//     progressBar.value = newValue;
-// }
 
-
-// function changeColor(newColor) {
-//     var elem = document.getElementById('para');
-//     elem.style.color = newColor;
-//   }
-
-
-
-  function modif(val) {
-    var ava = document.getElementById("avancement1");
-    if((ava.value+val)<=ava.max && (ava.value+val)>=0) {
-       ava.value += val;
-    }
-    console.log(ava.value)
-    // avancement();
+const players = [
+  {
+    defenseEnabled: false,
+    turnsBeforeBerserk: 3
+  },
+  {
+    defenseEnabled: false,
+    turnsBeforeBerserk: 3
   }
+]
 
-  function modification(val) {
-    var ava = document.getElementById("avancement2");
+
+  function updateLifePoints(playerNum, val) {
+    const progressBarId = `avancement-${playerNum}`
+    const ava = document.getElementById(progressBarId);
     if((ava.value+val)<=ava.max && (ava.value+val)>=0) {
-       ava.value += val;
+      ava.value += val;
     }
-    console.log(ava.value)
-    // avancement();
   }
-
-const playerOne
 
 const p0attack = document.getElementById('player-attack-0');
 const p1attack = document.getElementById('player-attack-1');
@@ -43,7 +29,7 @@ p0attack.addEventListener('click', evt => {
   p1attack.disabled = false
   p1potion.disabled = false
   p1defense.disabled = false
-  modification(-10)
+  updateLifePoints(1, -10)
 })
 
 p1attack.addEventListener('click', evt => {
@@ -53,7 +39,7 @@ p1attack.addEventListener('click', evt => {
   p1attack.disabled = true
   p1potion.disabled = true
   p1defense.disabled = true
-  modif(-10)
+  updateLifePoints(0, -10)
 })
 
 const p0potion = document.getElementById('player-potion-0');
